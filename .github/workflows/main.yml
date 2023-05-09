@@ -23,9 +23,9 @@ jobs:
       with:
         context: .
         push: true
-        tags: username/repo:latest
+        tags: 1zaboy/test-actions:latest
 
     - name: Save Docker Image
       run: |
         mkdir output
-        docker save -o output/image.tar username/repo:latest
+        docker save -o output/image.tar 1zaboy/test-actions:latest
