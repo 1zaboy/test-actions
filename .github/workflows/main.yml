@@ -29,6 +29,7 @@ jobs:
         push: true
         tags: 1zaboy/test-actions:latest
         dockerfile: ./Dockerfile
+        file: ./Dockerfile
 
     - name: Save Docker Image
       run: |
