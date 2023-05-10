@@ -25,10 +25,10 @@ jobs:
     - name: Build Docker Image
       uses: docker/build-push-action@v2
       with:
-        context: .
-        file: ./Dockerfile
+        context: .      
         push: true
         tags: 1zaboy/test-actions:latest
+        dockerfile: ./Dockerfile
 
     - name: Save Docker Image
       run: |
